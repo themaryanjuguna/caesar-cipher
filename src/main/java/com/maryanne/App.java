@@ -1,5 +1,3 @@
-/*
-
 package com.maryanne;
 
 import java.util.Scanner;
@@ -17,7 +15,7 @@ public class App {
         System.out.print ("Enter Key >> ");
         int Key = scan.nextInt();
 
-        String cipherText = new encoding(plain, Key);
+        encoding cipherText = new encoding(plain, Key);
 
         System.out.println("The cipher text: " + cipherText);
 
@@ -25,4 +23,4 @@ public class App {
     }
 
 
-}*/
+}

@@ -1,9 +1,16 @@
 package com.maryanne;
 
 public class encoding {
+    private String mPlain;
+    private int mKey;
     public static String alphabet = "abcdefghijklmnopqrstuvwxyz";
 
-        public static String encoding(String plainText, int Key) {
+    public encoding(String plain, int key) {
+        mPlain = plain;
+        mKey = key;
+    }
+
+    public static String encoding(String plainText, int Key) {
             plainText = plainText.toLowerCase();
             String cipherText = "";
             for (int i = 0; i<plainText.length(); i++) {
