@@ -6,10 +6,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class decodingTest {
 
+    decoding decodingTest = new decoding("octacppg", 2);
+
     @Test
     void decodingUserInput() {
-
-        decoding decode = new decoding();
-        assertEquals("hi", decode.decoding("jk", 2));
+        assertEquals("Njuguna", decodingTest.decoding());
     }
 }

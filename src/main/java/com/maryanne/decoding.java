@@ -29,6 +29,7 @@ public class decoding {
         String alphabet = "abcdefghijklmnopqrstuvwxyz";
         String plainText = getmPlain().toLowerCase();
         int key = getmKey();
+        String cipherText = "";
         //looping process generating indexes
         for (int i =0 ; i<plainText.length(); i++) {
             int charIndex = alphabet.indexOf(plainText.charAt(i));
@@ -38,10 +39,10 @@ public class decoding {
                 newIndex = alphabet.length() + newIndex;
             }
             char plainChar = alphabet.charAt(newIndex);
-            plainText += plainChar;
+            cipherText += plainChar;
 
         }
-        return plainText;
+        return cipherText;
     }
 
 
