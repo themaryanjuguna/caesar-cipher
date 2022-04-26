@@ -14,13 +14,24 @@ public class App {
         scanner.nextLine();
 
         if(userInput == 1){
-            System.out.println("Enter a text to be Encrypted ");
+            System.out.println("Enter a text to be Encrypted: ");
             String inputText = scanner.nextLine().toUpperCase();
-            System.out.println("Enter a key to Decrypt ");
+            System.out.println("Enter a key to Decrypt: ");
 
             int key = scanner.nextInt();
             encoding encoding = new encoding(inputText, key);
             System.out.println(String.format("Your encrypted text is :  %s", encoding.encoding()));
+
+        }
+        else if(userInput == 2) {
+
+            System.out.println("Enter a text to be Decrypted: ");
+            String inputText = scanner.nextLine().toUpperCase();
+            System.out.println("Enter a key to Decrypt: ");
+
+            int key = scanner.nextInt();
+            decoding decoding = new decoding(inputText, key);
+            System.out.println(String.format("Your decrypted text is :  %s", decoding.decoding()));
 
         }
     }
