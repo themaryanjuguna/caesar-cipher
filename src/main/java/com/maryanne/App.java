@@ -1,28 +1,30 @@
-/*
+
 package com.maryanne;
 
 import java.util.Scanner;
 
 public class App {
 
-    public static String alphabet = "abcdefghijklmnopqrstuvwxyz";
 
     public static void main (String[] args) {
-        Scanner scan = new Scanner (System.in);
 
-        System.out.print("EnterPlain Text >> ");
-        String plain = scan.nextLine();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(" Jambo! Welcome to Caeser Cipher, to continue input \n 1. Encrypt \n 2. Decrypt \n 3. Exit");
+        int userInput = scanner.nextInt();
+        scanner.nextLine();
 
-        System.out.print ("Enter Key >> ");
-        int Key = scan.nextInt();
+        if(userInput == 1){
+            System.out.println("Enter a text to be Encrypted ");
+            String inputText = scanner.nextLine().toUpperCase();
+            System.out.println("Enter a key to Decrypt ");
 
-        encoding cipherText = new encoding(plain, Key);
+            int key = scanner.nextInt();
+            encoding encoding = new encoding(inputText, key);
+            System.out.println(String.format("Your encrypted text is :  %s", encoding.encoding()));
 
-        System.out.println("The cipher text: " + cipherText);
-
-        System.out.println("the decoded message is: " + new decoding(cipherText, Key));
+        }
     }
 
 
 }
-*/
+
