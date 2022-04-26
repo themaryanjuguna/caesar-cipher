@@ -9,7 +9,7 @@ Caeser Cypher is a java application that encrypts or decrypts text using the Cae
 
 
 ## Setup
-* Go to the [Ceaser Cypher](https://github.com/themaryanjuguna/caesar-cipher.git) repository on Github.
+* Go to the [Caeser Cypher](https://github.com/themaryanjuguna/caesar-cipher.git) repository on Github.
 * Clone the project into your local device.
 * On the terminal, navigate to the project directory and run `gradle compile`. The navigate to the `main` directory in the build folder and run `java App`.
 

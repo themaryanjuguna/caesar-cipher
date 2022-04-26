@@ -9,7 +9,7 @@ class encodingTest {
     void encodingUserInput(){
 
         encoding encode = new encoding();
-        assertEquals("maryanne",  encode.encoding("maryanne", 2));
+        assertEquals("jk",  encode.encoding("hi", 2));
 
     }
 

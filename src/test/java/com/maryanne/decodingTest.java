@@ -9,6 +9,6 @@ class decodingTest {
     void decodingUserInput() {
 
         decoding decode = new decoding();
-        assertEquals("kypwyllc", decode.decoding("kypwyllc", 2));
+        assertEquals("hi", decode.decoding("jk", 2));
     }
 }
