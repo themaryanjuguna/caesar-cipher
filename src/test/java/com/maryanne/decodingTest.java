@@ -10,6 +10,6 @@ class decodingTest {
 
     @Test
     void decodingUserInput() {
-        assertEquals("Njuguna", decodingTest.decoding());
+        assertEquals("maryanne", decodingTest.decoding());
     }
 }
