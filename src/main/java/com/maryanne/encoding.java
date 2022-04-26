@@ -10,6 +10,22 @@ public class encoding {
         mKey = key;
     }
 
+    public String getmPlain() {
+        return mPlain;
+    }
+
+    public void setmPlain(String mPlain) {
+        this.mPlain = mPlain;
+    }
+
+    public int getmKey() {
+        return mKey;
+    }
+
+    public void setmKey(int mKey) {
+        this.mKey = mKey;
+    }
+
     public static String encoding(String plainText, int Key) {
             plainText = plainText.toLowerCase();
             String cipherText = "";
