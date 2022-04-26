@@ -1,16 +1,39 @@
 package com.maryanne;
 
 public class decoding {
-    public static String alphabet = "abcdefghijklmnopqrstuvwxyz";
+    private String mPlain;
+    private int mKey;
 
-    public static String decoding(String cipherText, int Key) {
-        cipherText = cipherText.toLowerCase();
-        String plainText = "";
+    public decoding(String plain, int key) {
+        mPlain = plain;
+        mKey = key;
+    }
+
+    public String getmPlain() {
+        return mPlain;
+    }
+
+    public void setmPlain(String mPlain) {
+        this.mPlain = mPlain;
+    }
+
+    public int getmKey() {
+        return mKey;
+    }
+
+    public void setmKey(int mKey) {
+        this.mKey = mKey;
+    }
+
+    public String decoding() {
+        String alphabet = "abcdefghijklmnopqrstuvwxyz";
+        String plainText = getmPlain().toLowerCase();
+        int key = getmKey();
         //looping process generating indexes
-        for (int i =0 ; i<cipherText.length(); i++) {
-            int charIndex = alphabet.indexOf(cipherText.charAt(i));
+        for (int i =0 ; i<plainText.length(); i++) {
+            int charIndex = alphabet.indexOf(plainText.charAt(i));
             //generate new index in the plain text
-            int newIndex = (charIndex - Key) % 26;
+            int newIndex = (charIndex - key) % 26;
             if (newIndex <0){
                 newIndex = alphabet.length() + newIndex;
             }
